@@ -186,9 +186,12 @@ textarea:hover {
     border-radius: 8px;
     color: white;
 }
-#contact h1 {
+#contact-section h1 {
     font-family: 'Times New Roman', Times, serif;
     color: black;
     font-size: 25px;
     text-align: center;
+}
+html {
+  scroll-behavior: smooth;
 }
