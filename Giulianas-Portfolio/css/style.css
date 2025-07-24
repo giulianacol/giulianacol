@@ -11,55 +11,184 @@ body {
 }
 #single-column {
     height: 100vh;
+    
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #single-column h1 {
     font-family: "Limelight", sans-serif;
+    font-size: 50px;
     text-align: center;
-    margin-bottom: 26px;
+    margin-bottom: 200px;
     color: #747C92;
 }
 .btn-container {
     display: inline-block;
-    padding: 10px;
     position: absolute;
     bottom: 40%;
-    font-size: 20px;
-    padding: 10px 25px;
+    font-size: 30px;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
 }
 #navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    z-index: 2;
+    background-color: #fff5;
+    backdrop-filter: blur(010px);
 }
 #navbar a {
     text-decoration: none;
     color: #747C92;
     padding: 24px;
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     
 }
 #single-column a:hover {
     color: #000000;
 }
-.btn-effect-3:hover {
+.btn-effect:hover {
     background: #747C92;
     transform: translateY(-5px), scale(1.05);
     border-radius: 8px;
     color: white;
 }
-.btn-effect-3 {
+.btn-effect {
     font-family: 'Times New Roman', Times, serif;
     background-color: white;
     border-color: #000000;
     color: black;
+}
+.profile-card {
+	width: 50%;
+    max-width: 50%;
+	border-radius: 2px;
+	overflow: hidden;
+	position: relative;
+	margin: 15% auto;
+    background-color: #EFD3D7;
+	top: 50%;
+    padding: 20px;
+	transform: translateY(-50%);
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px #000000;
+}
+.profile-card header {
+	display: block;
+	position: relative;
+	text-align: center;
+	padding: 30px 0 20px;
+	z-index: 1;
+	overflow: hidden;
+}
+.profile-card h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 25px;
+}
+.profile-card h1 {
+    font-family: "Limelight", sans-serif;
+    font-size: 30px;
+    color: black;
+}
+.profile-card p {
+    font-size: 20px;
+    background: #EFD3D7;
+}
+button {
+    font-size: 20px;
+}
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #EFD3D7;
+  color: #000000;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #EFD3D7;
+  color: #000000;
+}
+
+#btn-container2 {
+    display: inline-block;
+    position: absolute;
+    bottom: 40%;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn-effect2 {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    border-color: #000000;
+    color: black;
+    width: 200px;
+    margin: 40px auto;
+}
+.btn-effect2:hover {
+    background: #747C92;
+    transform: translateY(-5px), scale(1.05);
+    border-radius: 8px;
+    color: white;
+}
+#contact h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 25px;
+    text-align: center;
 }
